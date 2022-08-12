@@ -1,0 +1,32 @@
+@import "styles/vars.scss";
+.checkbox {
+  position: relative;
+  flex-shrink: 0;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  &__mark {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $grey;
+    background-color: #fff;
+  }
+  &__input {
+    position: absolute;
+    left: 100%;
+    visibility: hidden;
+  }
+  &__input:checked + &__mark {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  &__icon {
+    width: 14px;
+    height: 14px;
+    fill: #fff;
+  }
+}

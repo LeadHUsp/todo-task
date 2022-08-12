@@ -1,0 +1,25 @@
+.list {
+  font-family: inherit;
+  &__head {
+    text-align: center;
+  }
+  &__title {
+    font-weight: 600;
+    line-height: 120%;
+    font-size: 40px;
+    padding-bottom: 1em;
+    @media screen and (max-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+  &__filter {
+    display: flex;
+    justify-content: center;
+  }
+  &__body {
+    padding-top: 100px;
+  }
+  &__item {
+    padding: 15px 0;
+  }
+}

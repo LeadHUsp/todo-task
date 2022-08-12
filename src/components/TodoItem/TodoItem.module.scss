@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 15px;
+  background-color: #fff;
+  &__link {
+    margin-left: 2em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &_completed {
+    text-decoration: line-through;
+    background-color: #e9e9e9;
+  }
+}

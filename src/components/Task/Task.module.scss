@@ -1,0 +1,41 @@
+@import "styles/vars.scss";
+
+.task {
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  &__head {
+    font-weight: 600;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // border-bottom: 1px solid $grey;
+  }
+  &__title {
+    font-size: 30px;
+  }
+  &__link {
+    color: $link;
+  }
+  &__body {
+    font-size: 20px;
+    padding: 40px 20px;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    min-height: 450px;
+  }
+  &__footer {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__info {
+    text-transform: uppercase;
+    padding-left: 15px;
+  }
+}
